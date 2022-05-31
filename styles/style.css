@@ -46,6 +46,7 @@ body {
 
 .main__img {
     width: 100%;
+    object-fit: cover;
 }
 
 .main__info {
@@ -75,7 +76,6 @@ body {
 
 /* footer */
 
-
 .footer {
     margin-top: 50px;
     width: 100%;
@@ -101,7 +101,6 @@ body {
     border-radius: 50%;
 }
 
-
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -109,4 +108,79 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:768px) {
+
+    body {
+        background: url(../images/bg-desktop.svg) no-repeat center, var(--mainbg);
+        background-size: cover;
+    }
+
+    .hero__logo {
+        width: 150px;
+    }
+
+    .main {
+        flex-direction: row;
+        align-items: center;
+        width: 90%;
+    }
+
+    .main__picture {
+        width: 150%;
+    }
+
+    .main__info {
+        text-align: start;
+        gap: 15px;
+    }
+
+    .info__title {
+        font-size: 1.7rem;
+    }
+
+    .info__paragraph {
+        font-size: .8rem;
+    }
+
+    .info__cta {
+        margin: 0 auto 0 0;
+        padding: 10px 40px;
+    }
+
+    .footer {
+        margin: 0;
+    }
+
+    .footer__social {
+        justify-content: flex-end;
+        padding: 0 40px;
+    }
+
+    .social__icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .icon {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (min-width:1024px) {
+
+    .main__picture {
+        width: 150%;
+    }
+
+    .info__title {
+        font-size: 2.6rem;
+    }
+
+    .info__paragraph {
+        font-size: 1.2rem;
+    }
+
 }
